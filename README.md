@@ -1,6 +1,6 @@
 # gpt_jupyterlab
 
-[![Github Actions Status](https://github.com/henshinger/gpt_jupyterlab/workflows/Build/badge.svg)](https://github.com/henshinger/gpt_jupyterlab/actions/workflows/build.yml)
+[![Github Actions Status](https://github.com/henshinger/gpt-jupyterlab/workflows/Build/badge.svg)](https://github.com/henshinger/gpt-jupyterlab/actions/workflows/build.yml)
 A JupyterLab extension.
 
 This is a Jupyter Lab extension that enables you to run GPT on your notebook cells.
