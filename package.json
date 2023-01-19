@@ -7,9 +7,9 @@
     "jupyterlab",
     "jupyterlab-extension"
   ],
-  "homepage": "https://github.com/henshinger/gpt_jupyterlab",
+  "homepage": "https://github.com/henshinger/gpt-jupyterlab",
   "bugs": {
-    "url": "https://github.com/henshinger/gpt_jupyterlab/issues"
+    "url": "https://github.com/henshinger/gpt-jupyterlab.git/issues"
   },
   "license": "BSD-3-Clause",
   "author": {
@@ -26,7 +26,7 @@
   "style": "style/index.css",
   "repository": {
     "type": "git",
-    "url": "https://github.com/henshinger/gpt_jupyterlab.git"
+    "url": "https://github.com/henshinger/gpt-jupyterlab.git"
   },
   "scripts": {
     "build": "jlpm build:lib && jlpm build:labextension:dev",
