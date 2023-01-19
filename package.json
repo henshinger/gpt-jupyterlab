@@ -1,7 +1,7 @@
 {
   "name": "gpt_jupyterlab",
   "version": "0.1.0",
-  "description": "A JupyterLab extension.",
+  "description": "Use GPT within your Jupyterlab Notebook.",
   "keywords": [
     "jupyter",
     "jupyterlab",
