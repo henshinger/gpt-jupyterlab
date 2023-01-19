@@ -1,0 +1,70 @@
+{
+  "jupyter.lab.shortcuts": [
+    {
+      "command": "@gpt_jupyterlab/plugin:run_gpt",
+      "keys": ["Accel Space"],
+      "selector": ".jp-Cell"
+    }
+  ],
+  "title": "gpt_jupyterlab",
+  "description": "gpt_jupyterlab settings.",
+  "type": "object",
+  "jupyter.lab.menus": {
+    "main": [
+      {
+        "id": "jp-mainmenu-edit",
+        "items": [
+          {
+            "command": "@gpt_jupyterlab/plugin:run_gpt",
+            "rank": 500
+          }
+        ]
+      }
+    ]
+  },
+  "properties": {
+    "openai_key": {
+      "type": "string",
+      "title": "Open AI API Key",
+      "description": "Your Open AI key to run GPT-3.",
+      "default": ""
+    },
+    "code_model": {
+      "type": "string",
+      "title": "Code Model",
+      "description": "Default model to use when running code.",
+      "default": "code-davinci-002"
+    },
+    "text_model": {
+      "type": "string",
+      "title": "Text Model",
+      "description": "Default model to use when running on a piece of text.",
+      "default": "text-davinci-003"
+    },
+    "max_tokens": {
+      "type": "integer",
+      "title": "max_tokens",
+      "description": "max_tokens parameter to be passed to the API",
+      "default": 16
+    },
+    "temperature": {
+      "type": "number",
+      "title": "temperature",
+      "description": "temperature parameter to be passed to the API",
+      "default": 1
+    }, 
+    "presence_penalty": {
+      "type": "number",
+      "title": "presence_penalty",
+      "description": "presence_penalty parameter to be passed to the API",
+      "default": 0
+    }, 
+    "frequency_penalty": {
+      "type": "number",
+      "title": "frequency_penalty",
+      "description": "frequency_penalty parameter to be passed to the API",
+      "default": 0
+    }
+  },
+  "additionalProperties": false
+}
