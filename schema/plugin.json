@@ -52,13 +52,13 @@
       "title": "temperature",
       "description": "temperature parameter to be passed to the API",
       "default": 1
-    }, 
+    },
     "presence_penalty": {
       "type": "number",
       "title": "presence_penalty",
       "description": "presence_penalty parameter to be passed to the API",
       "default": 0
-    }, 
+    },
     "frequency_penalty": {
       "type": "number",
       "title": "frequency_penalty",
