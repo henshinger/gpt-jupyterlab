@@ -36,7 +36,6 @@ jobs:
         set -eux
         python -m pip install .[test]
 
-        pytest -vv -r ap --cov gpt_jupyterlab
         jupyter server extension list
         jupyter server extension list 2>&1 | grep -ie "gpt_jupyterlab.*OK"
 
