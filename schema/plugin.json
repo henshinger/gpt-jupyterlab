@@ -45,13 +45,13 @@
       "type": "integer",
       "title": "max_tokens",
       "description": "max_tokens parameter to be passed to the API",
-      "default": 16
+      "default": 256
     },
     "temperature": {
       "type": "number",
       "title": "temperature",
       "description": "temperature parameter to be passed to the API",
-      "default": 1
+      "default": 0.7
     },
     "presence_penalty": {
       "type": "number",
