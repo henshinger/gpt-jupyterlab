@@ -10,7 +10,12 @@ import {
   NotebookPanel,
   INotebookModel
 } from '@jupyterlab/notebook';
-import { ICommandPalette, ToolbarButton } from '@jupyterlab/apputils';
+import {
+  ICommandPalette,
+  ToolbarButton,
+  InputDialog,
+  Dialog
+} from '@jupyterlab/apputils';
 import { requestAPI } from './handler';
 
 import { DocumentRegistry } from '@jupyterlab/docregistry';
@@ -31,9 +36,9 @@ export const gptIcon = new LabIcon({
 /**
  * Initialization data for the gpt_jupyterlab extension.
  */
-function loadSetting(setting: ISettingRegistry.ISettings): any {
+async function loadSetting(setting: ISettingRegistry.ISettings) {
   // Read the settings and convert to the correct type
-  const openai_key = setting.get('openai_key').composite as string;
+  let openai_key = setting.get('openai_key').composite as string;
   const code_model = setting.get('code_model').composite as string;
   const text_model = setting.get('text_model').composite as string;
   const max_tokens = setting.get('max_tokens').composite as number;
@@ -41,6 +46,15 @@ function loadSetting(setting: ISettingRegistry.ISettings): any {
   const presence_penalty = setting.get('presence_penalty').composite as number;
   const frequency_penalty = setting.get('frequency_penalty')
     .composite as number;
+  if (!openai_key) {
+    const inputValue: Dialog.IResult<string> = await InputDialog.getText({
+      title: 'Provide your OpenAI API Key'
+    });
+    if (inputValue.value) {
+      await setting.set('openai_key', inputValue.value);
+      openai_key = inputValue.value;
+    }
+  }
   return {
     openai_key,
     code_model,
@@ -125,7 +139,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
                   temperature,
                   presence_penalty,
                   frequency_penalty
-                } = loadSetting(setting);
+                } = await loadSetting(setting);
                 const activeCell = notebooks.activeCell;
                 if (activeCell) {
                   const dataToSend = {
