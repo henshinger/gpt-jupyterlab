@@ -11,7 +11,7 @@ This extension is composed of a Python package named `gpt_jupyterlab`
 for the server extension and a NPM package named `gpt_jupyterlab`
 for the frontend extension.
 
-**Note: You will need your own OpenAI API Key to use this extension(See: [How to get OpenAI API Key](#https://www.youtube.com/watch?v=_vEJ07K0VPs))**
+**Note: You will need your own OpenAI API Key to use this extension(See: [How to get OpenAI API Key](https://www.youtube.com/watch?v=_vEJ07K0VPs))**
 
 https://user-images.githubusercontent.com/1387307/213931801-0fdefd9d-4edd-4007-8c00-951d4ffb12b4.mp4
 
@@ -40,17 +40,21 @@ There are three ways to prompt the GPT API.
 ![GPT Button Screenshot](https://user-images.githubusercontent.com/1387307/213923948-863b7e28-f956-4c8c-b27b-959551952b39.png)
 
 **2. Click `GPT Completion` under the `Edit` Menu**
+
 ![GPT Menu Screenshot](https://user-images.githubusercontent.com/1387307/213923950-bacaf820-ecb2-4220-984f-cd2b8bd69ce5.png)
 
 **3. Use the `Ctrl`+`Space`(Windows)/`Cmd`+`Space`(Mac) Keyboard Shortcut**
+
 ![GPT Menu Screenshot](https://user-images.githubusercontent.com/1387307/213923950-bacaf820-ecb2-4220-984f-cd2b8bd69ce5.png)
 
 ## How to Change Your Settings
 
 **Go to the `Settings` Menu and click `Advanced Settings Editor`**
+
 ![Advanced Settings Editor](https://user-images.githubusercontent.com/1387307/213924568-76b150f5-9def-427b-8a89-22ef357758ff.png)
 
 **Click `gpt_jupyterlab` in the left sidebar**
+
 ![GPT JupyterLab Settings](https://user-images.githubusercontent.com/1387307/213924690-2df6cb67-1197-433f-afe7-42af3474767d.png)
 
 ## Troubleshoot
