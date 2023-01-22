@@ -11,7 +11,7 @@ This extension is composed of a Python package named `gpt_jupyterlab`
 for the server extension and a NPM package named `gpt_jupyterlab`
 for the frontend extension.
 
-**Note: You will need your own OpenAI API Key to use this extension. You can get them in the [API Key page](https://beta.openai.com/account/api-keys), which requires an OpenAI account.)**
+**Note: You will need your own OpenAI API Key to use this extension. You can get them in the [API Key page](https://beta.openai.com/account/api-keys), which requires an OpenAI account.**
 
 https://user-images.githubusercontent.com/1387307/213931801-0fdefd9d-4edd-4007-8c00-951d4ffb12b4.mp4
 
