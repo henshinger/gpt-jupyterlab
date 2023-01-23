@@ -23,6 +23,45 @@ To install the extension, execute:
 pip install gpt_jupyterlab
 ```
 
+It should now appear on your installed extensions list.
+
+![extensions](https://user-images.githubusercontent.com/1387307/214102475-52174985-c787-4b35-824b-aea6c3e80355.png)
+
+**Note: Make sure that you have enabled extensions. You may also need to restart the server(not the kernel) to make sure that it runs properly.**
+
+### Installing in GCP Vertex Workbench
+
+**1. Create new notebook**
+
+![create-new-notebook](https://user-images.githubusercontent.com/1387307/214115423-1330d1a0-bb1d-4824-9270-487736f34356.png)
+
+**2. Run `pip install gpt_jupyterlab`**
+
+![install-gpt-jupyterlab](https://user-images.githubusercontent.com/1387307/214115339-f9018a68-7a50-4cff-828a-bee0280addee.png)
+
+
+**3. Enable extensions**
+
+![enable-extensions](https://user-images.githubusercontent.com/1387307/214115314-3406694c-8558-4009-bd2a-dbf248868331.png)
+
+You should see `gpt_jupyterlab` installed, but you need to restart the server to make
+
+![extension-list](https://user-images.githubusercontent.com/1387307/214115261-096c83a7-4d56-4cfe-bbd6-7244d1869ce6.png)
+
+**4. Restart the notebook**
+
+Stop the notebook
+
+![stop-server](https://user-images.githubusercontent.com/1387307/214115243-41de417c-c55f-43ba-a29d-c9b6780a2e56.png)
+
+Start the notebook
+
+![start-notebook](https://user-images.githubusercontent.com/1387307/214115508-d2e8db95-b893-4dd2-814f-3cd4b18f1f47.png)
+
+You should be able to see the GPT button and be able to make queries.
+
+![button-visible](https://user-images.githubusercontent.com/1387307/214115494-9f2c2d1a-b5ed-4fc7-a9f8-425b40f12d27.png)
+
 ## Uninstall
 
 To remove the extension, execute:
