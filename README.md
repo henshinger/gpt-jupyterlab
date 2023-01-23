@@ -25,7 +25,7 @@ pip install gpt_jupyterlab
 
 It should now appear on your installed extensions list.
 
-![extensions](https://user-images.githubusercontent.com/1387307/214102475-52174985-c787-4b35-824b-aea6c3e80355.png)
+![extensions](https://user-images.githubusercontent.com/1387307/214115261-096c83a7-4d56-4cfe-bbd6-7244d1869ce6.png)
 
 **Note: Make sure that you have enabled extensions. You may also need to restart the server(not the kernel) to make sure that it runs properly.**
 
