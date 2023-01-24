@@ -3,7 +3,7 @@
 [![Github Actions Status](https://github.com/henshinger/gpt-jupyterlab/workflows/Build/badge.svg)](https://github.com/henshinger/gpt-jupyterlab/actions/workflows/build.yml)
 A JupyterLab extension.
 
-GPT JupterLab is a JupyterLab extension to use OpenAI’s GPT models(including Codex model for code completion) on your notebook cells.
+GPT JupterLab is a JupyterLab extension to use OpenAI’s GPT models for text and code completion on your notebook cells.
 
 This extension passes your current notebook cell to the GPT API and completes your code/text for you. You can customize the GPT parameters in the Advanced Settings menu.
 
@@ -38,7 +38,6 @@ It should now appear on your installed extensions list.
 **2. Run `pip install gpt_jupyterlab`**
 
 ![install-gpt-jupyterlab](https://user-images.githubusercontent.com/1387307/214115339-f9018a68-7a50-4cff-828a-bee0280addee.png)
-
 
 **3. Enable extensions**
 
