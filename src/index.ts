@@ -142,6 +142,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
                 } = await loadSetting(setting);
                 const activeCell = notebooks.activeCell;
                 if (activeCell) {
+                  activeCell.setPrompt('…');
                   const dataToSend = {
                     params: {
                       model:
@@ -166,6 +167,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
                   } catch (reason) {
                     console.error(`Error on POST ${dataToSend}.\n${reason}`);
                   }
+                  activeCell.setPrompt('');
                 }
               }
             }
