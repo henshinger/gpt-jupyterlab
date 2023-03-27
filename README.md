@@ -1,3 +1,4 @@
+## IMPORTANT: OpenAI has deprecated their codex endpoint, so this plugin isn't functional for now. 
 # gpt_jupyterlab
 
 [![Github Actions Status](https://github.com/henshinger/gpt-jupyterlab/workflows/Build/badge.svg)](https://github.com/henshinger/gpt-jupyterlab/actions/workflows/build.yml)
